@@ -1,0 +1,14 @@
+name: JaniecTheme
+description: Theme by KolDev.
+type: theme
+base theme: false
+core_version_requirement: ^8 || ^9 || ^10
+
+libraries: 
+  - janiectheme/global-styling
+regions:
+  header: header
+  menu: menu
+  content: content
+  sidebar: sidebar
+  footer: footer
