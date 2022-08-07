@@ -1,10 +1,4 @@
 global-styling:
   css:
     theme:
-      build/style/index.css: {}
-      css/print.css: {}
-  js:
-    js/script.js: {}
-
-  dependencies:
-    - core/jquery
+      ./src/css/index.css: {}
