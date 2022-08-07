@@ -1,5 +1,21 @@
 .text {
-  color: green;
+  color: rgb(115, 111, 60);
+}
+
+.layout-container {
+  width: 1500px;
+}
+
+#block-janiectheme-main-menu {
+  background-color: red;
+}
+
+#block-janiectheme-account-menu {
+  background-color: pink;
+}
+
+#block-janiectheme-site-branding {
+  width: 500px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass ./src/sass/style.scss ./src/css/index.css"
+    "sass": "sass ./src/sass/style.scss ./src/css/index.css",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/css/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-livereload": "^4.0.2",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.54.3"
+    "sass": "^1.54.3",
+    "tailwindcss": "^3.1.8"
   },
   "dependencies": {
     "gulp-imagemin": "^8.0.0",

@@ -2,3 +2,4 @@ global-styling:
   css:
     theme:
       ./src/css/index.css: {}
+      ./src/dist/output.css: {}
