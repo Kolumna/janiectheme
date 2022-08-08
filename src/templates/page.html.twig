@@ -47,7 +47,7 @@
 #}
 <div id="container" class=" container">
 
-  <header role="banner">
+  <header class=" mt-8" role="banner">
     {{ page.header }}
   </header>
 
@@ -60,11 +60,14 @@
 
   {{ page.help }}
 
+  <nav class=" mt-8">
+    {{ page.menu }}
+  </nav>
+
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
-      <h1 class=" text-3xl">sus</h1>
       {{ page.content }}
     </div>{# /.layout-content #}
 

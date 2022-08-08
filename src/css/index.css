@@ -1,21 +1,125 @@
-.text {
-  color: rgb(115, 111, 60);
-}
-
-.layout-container {
-  width: 1500px;
-}
-
-#block-janiectheme-main-menu {
-  background-color: red;
+/*#block-janiectheme-main-menu {
+    background-color: rgb(255, 123, 123);
 }
 
 #block-janiectheme-account-menu {
-  background-color: pink;
+    background-color: pink;
 }
 
 #block-janiectheme-site-branding {
-  width: 500px;
+    width: 500px;
+}
+
+#block-janiectheme-primary-local-tasks {
+    background-color: rgb(208, 250, 146);
+}
+
+#search-block-form {
+    background-color: aquamarine;
+}
+
+#edit-keys {
+    background-color: aqua;
+}
+
+*/
+* a:hover {
+  background-color: gainsboro;
+}
+
+#container header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+#container header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+#container header div nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+#container header div nav #menu-list {
+  display: flex;
+}
+#container header div nav #menu-list li {
+  margin-left: 10px;
+}
+#container header div nav #menu-list li:first-child {
+  margin-left: 0px;
+}
+#container header #block-janiectheme-site-branding {
+  width: 450px;
+}
+#container main {
+  margin-top: 40px;
+}
+#container #block-janiectheme-main-menu {
+  margin-top: 60px;
+}
+#container #block-janiectheme-main-menu #menu-list {
+  display: flex;
+}
+#container #block-janiectheme-main-menu #menu-list li {
+  margin-left: 30px;
+}
+#container #block-janiectheme-main-menu #menu-list li:first-child {
+  margin-left: 0px;
+}
+#container #block-janiectheme-main-menu #menu-list a {
+  font-size: 2rem;
+  font-weight: 800;
+}
+#container #block-janiectheme-content article {
+  margin-top: 40px;
+  border: 6px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  width: 750px;
+  margin-bottom: 40px;
+}
+#container #block-janiectheme-content article h1 {
+  font-size: 5rem;
+}
+#container #block-janiectheme-content article h2 {
+  font-size: 3.5rem;
+}
+#container #block-janiectheme-content article p {
+  font-size: 1.5rem;
+}
+
+#item-link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#item-link a {
+  padding: 5px;
+  border-radius: 10px;
+}
+#item-link a:hover {
+  background-color: gainsboro;
+}
+
+#block-janiectheme-primary-local-tasks {
+  margin-top: 40px;
+}
+#block-janiectheme-primary-local-tasks #primary-tasks {
+  display: flex;
+}
+#block-janiectheme-primary-local-tasks #primary-tasks li {
+  margin-left: 10px;
+  color: green;
+}
+#block-janiectheme-primary-local-tasks #primary-tasks li:first-child {
+  margin-left: 0px;
+}
+
+#block-janiectheme-page-title h1 {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */
