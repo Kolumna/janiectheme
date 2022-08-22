@@ -45,24 +45,23 @@
  * @ingroup themeable
  */
 #}
-<div id="container" class=" container">
+<div class="layout-container">
 
-  <header class=" mt-8" role="banner">
+  <header role="banner">
     {{ page.header }}
   </header>
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
+  {% if page.nav %}
+    <nav id="nav" class="content">
+      {{ page.nav }}
+    </nav>
+  {% endif %}
 
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}
 
   {{ page.help }}
-
-  <nav class=" mt-8">
-    {{ page.menu }}
-  </nav>
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
