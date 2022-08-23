@@ -125,12 +125,6 @@ main > div {
   width: 100%;
   justify-content: start;
 }
-main > div .views-row {
-  border: 7px solid black;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  min-width: 700px;
-}
 main > div #block-janiectheme-page-title h1 {
   font-size: 64;
   font-weight: 800;
@@ -144,4 +138,22 @@ main > div #block-janiectheme-page-title h1 {
 }
 .layout-container > footer p {
   font-size: 3rem;
+}
+
+div.views-row {
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  min-width: 700px;
+  padding: 10px;
+}
+div.views-row > article h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+div.views-row > article h2 a {
+  color: rgb(75, 75, 75);
+}
+div.views-row > article > div > ul > li a {
+  color: rgb(75, 75, 75);
 }/*# sourceMappingURL=style.css.map */

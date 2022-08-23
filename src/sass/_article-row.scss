@@ -1,0 +1,28 @@
+div.views-row {
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    min-width: 700px;
+    padding: 10px;
+
+    > article{
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+
+            a {
+                color: rgb(75, 75, 75);
+            }
+        }
+
+        > div {
+            > ul {
+                > li {
+                    a {
+                        color: rgb(75, 75, 75);
+                    }
+                }
+            }
+        }
+    }
+}
