@@ -1,8 +1,7 @@
 main {
     display: flex;
     justify-content: start;
-    width: 1500px;
-
+    width: 100%;
     > div {
         display: flex;
         width: 100%;
@@ -10,8 +9,9 @@ main {
 
         #block-janiectheme-page-title {
             h1 {
-                font-size: 64;
+                font-size: 3rem;
                 font-weight: 800;
+                margin-bottom: 30px;
             }
         }
     }

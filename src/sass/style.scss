@@ -1,3 +1,6 @@
+//rwd
+@import './breakpoints';
+
 //layoyt styling
 @import './header';
 @import './nav';
@@ -5,3 +8,7 @@
 @import './content';
 @import './footer';
 @import './article-row';
+
+//paragraphs
+@import './paragraphs/obraz-wysrodkowany';
+@import './paragraphs/paragraphs-default';

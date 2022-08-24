@@ -1,11 +1,10 @@
 .layout-container {
     > nav {
         margin: 20px 0 20px 0;
-
+        width: 100%;
         > div {
             display: flex;
             flex-direction: column;
-            width: 1500px;
             justify-content: center;
             align-items: flex-start;
 

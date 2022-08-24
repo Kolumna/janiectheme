@@ -4,9 +4,16 @@
   "description": "theme by janiec",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass ./src/sass/style.scss ./src/css/index.css",
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/css/output.css --watch"
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:html": "onchange 'src/*.html' -- npm run copy:html",
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server public --files public",
+    "start": "npm-run-all copy --parallel watch serve",
+    "build": "npm-run-all copy:html build:*",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "repository": {
     "type": "git",
@@ -18,17 +25,14 @@
     "url": "https://github.com/Kolumna/janiectheme/issues"
   },
   "homepage": "https://github.com/Kolumna/janiectheme#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-livereload": "^4.0.2",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.54.3",
-    "tailwindcss": "^3.1.8"
-  },
   "dependencies": {
-    "gulp-imagemin": "^8.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "imagemin-pngquant": "^9.0.2"
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.0.17",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.8"
   }
 }

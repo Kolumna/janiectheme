@@ -1,5 +1,27 @@
+@media screen and (min-width: 320px) {
+  div.layout-container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.layout-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  div.layout-container {
+    width: 1224px;
+  }
+}
+@media screen and (min-width: 1824px) {
+  div.layout-container {
+    width: 1824px;
+  }
+}
+header {
+  width: 100%;
+}
 header > div {
-  width: 1500px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -21,11 +43,11 @@ header nav > ul li:first-child {
 
 .layout-container > nav {
   margin: 20px 0 20px 0;
+  width: 100%;
 }
 .layout-container > nav > div {
   display: flex;
   flex-direction: column;
-  width: 1500px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -84,11 +106,15 @@ header nav > ul li:first-child {
   list-style-type: none;
 }
 
-.layout-container {
+div.dialog-off-canvas-main-canvas {
+  display: flex;
+  justify-content: center;
+}
+
+div.layout-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 
 a:link {
@@ -118,7 +144,7 @@ a:active {
 main {
   display: flex;
   justify-content: start;
-  width: 1500px;
+  width: 100%;
 }
 main > div {
   display: flex;
@@ -126,8 +152,9 @@ main > div {
   justify-content: start;
 }
 main > div #block-janiectheme-page-title h1 {
-  font-size: 64;
+  font-size: 3rem;
   font-weight: 800;
+  margin-bottom: 30px;
 }
 
 .layout-container > footer {
@@ -156,4 +183,17 @@ div.views-row > article h2 a {
 }
 div.views-row > article > div > ul > li a {
   color: rgb(75, 75, 75);
+}
+
+div.paragraph--type--obraz-wysrodkowany > div {
+  display: flex;
+  justify-content: center;
+}
+div.paragraph--type--obraz-wysrodkowany > div img {
+  width: 100%;
+  height: auto;
+}
+
+div.paragraph {
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
