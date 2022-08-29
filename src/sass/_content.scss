@@ -1,17 +1,29 @@
 main {
     display: flex;
+    flex-direction: column;
     justify-content: start;
     width: 100%;
-    > div {
-        display: flex;
+    div.layout-content {
         width: 100%;
-        justify-content: start;
-
-        #block-janiectheme-page-title {
-            h1 {
+    }
+    #block-tytulstrony {
+            .page-title {
                 font-size: 3rem;
                 font-weight: 800;
                 margin-bottom: 30px;
+            }
+        }
+    #block-janiectheme-content {
+        > article {
+            > div {
+                div {
+                    margin-bottom: 40px;
+                    > img {
+                        border: 8px solid black;
+                        height: auto;
+                        width: 100%;
+                    }
+                }
             }
         }
     }

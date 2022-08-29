@@ -1,9 +1,7 @@
 div.views-row {
-    background-color: rgb(231, 231, 231);
+    border: 6px solid rgb(83, 83, 83);;
     border-radius: 10px;
     margin-bottom: 40px;
-    min-width: 700px;
-    padding: 10px;
     > article{
         h2 {
             font-size: 3rem;
@@ -21,5 +19,18 @@ div.views-row {
                 }
             }
         }
+    }
+}
+div.view-content {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 150px;
+}
+@media screen and (max-width: 1224px) {
+    div.view-content {
+         width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }

@@ -46,27 +46,28 @@
             }
 
             #block-janiectheme-primary-local-tasks {
-
-                > ul {
-                    display: flex;
-                    margin-top: 20px;
-
-                    li {
-                        margin-left: 10px;
-                    }
-
-                    li:first-child {
-                        margin-left: 0px;
-                    }
-
-                    a {
-                        padding: 5px;
-                        color: rgb(226, 77, 77);
-                    }
-
-                    a:hover {
-                        background-color: rgb(229, 229, 229);        
-                    }
+                .tabs {
+                    > ul {
+                        display: flex;
+                        margin-top: 20px;
+    
+                        li {
+                            margin-left: 10px;
+                        }
+    
+                        li:first-child {
+                            margin-left: 0px;
+                        }
+    
+                        a {
+                            padding: 5px;
+                            color: rgb(226, 77, 77);
+                        }
+    
+                        a:hover {
+                            background-color: rgb(229, 229, 229);        
+                        }
+                }
                 }
             }
         }

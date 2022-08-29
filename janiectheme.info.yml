@@ -11,4 +11,5 @@ regions:
   header: Header
   nav: Nav
   content: Content
+  home: Home
   footer: Footer

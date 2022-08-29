@@ -1,22 +1,26 @@
+div.layout-container {
+    width: 100%;
+}
+
 @media screen and (min-width: 320px) {
     div.layout-container {
-        width: 320px;
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 768px) {
     div.layout-container {
-        width: 768px;
+        width: 668px;
     }
 }
 
 @media screen and (min-width: 1224px) {
     div.layout-container {
-        width: 1224px;
+        width: 1220px;
     }
 }
 
-@media screen and (min-width: 1824px) {
+@media screen and (min-width: 1920px) {
     div.layout-container {
         width: 1824px;
     }
